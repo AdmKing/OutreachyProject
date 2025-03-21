@@ -20,6 +20,7 @@ body {
   text-align: center;
 }
 
+/* Utilities */
 .container{
   display: flex;
   flex-direction: column;
@@ -27,11 +28,31 @@ body {
   margin: auto;
 }
 
+.message{
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}
+
+button {
+  padding: 0.5rem 0.7rem;
+  border: none;
+  background: var(--primary-color);
+  color: white;
+  border-radius: 10px;
+}
+
+button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
 /* form{
   background: #24323d;
   padding: 20px 40px;
 } */
 
+
+/* The form and its elements */
 .form{
   display: flex;
   flex-direction: column;
@@ -50,12 +71,6 @@ body {
   font-weight: 600;
   letter-spacing: 0.3px;
   position: relative;
-  text-align: center;
-}
-
-.message{
-  color: #fff;
-  font-size: 14px;
   text-align: center;
 }
 
@@ -144,15 +159,3 @@ select{
   width: 80%;
 }
 
-button {
-  padding: 0.5rem 0.7rem;
-  border: none;
-  background: var(--primary-color);
-  color: white;
-  border-radius: 10px;
-}
-
-button:hover {
-  opacity: 0.9;
-  cursor: pointer;
-}
