@@ -3,9 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Outreachy project contribution</title>
 </head>
 <body>
+  <div id="banner" class="banner">
+    <h1>Hi Adams here. A certified art lover with an equal interest in tech!</h1>
+  </div>
+  <div class="container">
+    <form autocomplete="off" id="control-form" class="form">
+      <p class="title">Tell me a little about yourself</p>
+      <p class="message">Feel free</p>
+      <div class="form-group">
+        <label>
+          <input type="text" required>
+          <span>First Name</span>
+        </label>
+        <label>
+          <input type="text" required>
+          <span>Last Name</span>
+        </label>
+      </div>
+      <label>
+        <input type="email" required>
+        <span>Email Name</span>
+      </label>
+      <label for="background-color" class="message">Which of these interests best resonates with you?</label>
+      <select onchange="handleOnChangeEvent(this.value)">
+        <option value="">Choose...</option>
+        <option value="images/flowers.jpg">Nature</option>
+        <option value="ocean">Tech</option>
+        <option value="mountains">Sports</option>
+        <!-- <button type="button" onclick="changeBanner()">Apply</button> -->
+      </select>
+      <button class="submit">Submit</button>
+      <p class="message">thanks for sharing!</p>    
+    </form>
+  </div>
   
+
+<script src="script.js"></script>
 </body>
 </html>
