@@ -1,3 +1,9 @@
-function handleOnChangeEvent(x){
-  document.getElementById("banner").style.backgroundImage = "url('"+x+"') no-repeat center center/cover";
-}
+document.addEventListener("DOMContentLoaded", function() {
+  const banner = document.getElementById("banner");
+  const select = document.getElementById("bg-select");
+
+  select.addEventListener("change", function() {
+      const selectedImage = select.value;
+      banner.style.backgroundImage = `url('${selectedImage}')`;
+  });
+});
