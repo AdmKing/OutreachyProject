@@ -2,6 +2,7 @@
 
 :root{
   --primary-color: #1ab188;
+  --secondary-color: #24323d;
 }
 
 * {
@@ -11,14 +12,12 @@
 }
 
 body {
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
   min-height: 100vh;
-  background-color: #f7f7f7;
+  background-color: #f4f4f4;
   font-family: "Poppins", sans-serif;
   text-align: center;
 }
+
 
 /* Utilities */
 .container{
@@ -46,10 +45,6 @@ button:hover {
   opacity: 0.9;
   cursor: pointer;
 }
-/* form{
-  background: #24323d;
-  padding: 20px 40px;
-} */
 
 
 /* The form and its elements */
@@ -84,7 +79,8 @@ button:hover {
   position: relative;
 }
 
-.form label input{
+.form label input,
+.form textarea{
   width: 100%;
   padding: 10px 10px 20px 10px;
   outline: none;
@@ -100,6 +96,17 @@ button:hover {
   font-size: 0.9em;
   cursor: text;
   transition: 0.3s ease;
+}
+
+.form textarea{
+  font-family: "Poppins", sans-serif;
+  left: 10px;
+  top: 15px;
+  color: #25323d;
+  font-size: 1/2em;
+  font-weight: 600;
+  cursor: text;
+  /* transition: 0.3s ease; */
 }
 
 .form label input:placeholder-shown + span{
@@ -122,21 +129,29 @@ label.message{
   margin-top: 15px;
 }
 
+
+/* Styling the banner */
 .banner {
   width: 100%;
-  padding: 50px;
-  background-color: #333;
+  height: 20vh;
+  padding: 2rem;
+  background: url('https://picsum.photos/id/5/1920/300?grayscale&blur=2') no-repeat center center/cover;
   color: white;
-  transition: 0.5s ease-in-out;
   margin-bottom: 0;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease-in-out; /* Smooth fade effect */
+  opacity: 1;
 }
 
-.banner::before{
-  content: '';
-  background: x;
+.banner h1 {
+  font-weight: 700;
+  font-size: 40px;
 }
 
+
+/* Extra styling */
 form {
   margin-top: 20px;
 }
@@ -158,4 +173,3 @@ select{
 .form-group select{
   width: 80%;
 }
-
